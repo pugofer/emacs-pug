@@ -1,0 +1,3 @@
+*.el text diff
+*.org text diff
+*.pdf binary
