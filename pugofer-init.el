@@ -17,17 +17,19 @@
 ;; These should go into pugofer.el
 ;; For now you need to hand-change these paths
 
-(defun run-pugofer-std ()
+(defun run-pug-pup ()
   (interactive)
-  (setenv "PUGOFER" (expand-file-name "~/gofer/pustd.pre"))
+  (setenv "PUG" (expand-file-name "pup.pre"
+				      pugofer-prelude-directory))
   (run-pugofer pugofer-program-name))
 
-(defun run-pugofer-simple ()
+(defun run-pug-pug ()
   (interactive)
-  (setenv "PUGOFER" (expand-file-name "~/gofer/pusimple.pre"))
+  (setenv "PUG" (expand-file-name "pug.pre"
+				      pugofer-prelude-directory))
   (run-pugofer pugofer-program-name))
 
-(defun run-pugofer-cc ()
+(defun run-pug-kit ()
   (interactive)
   (setenv "PUGOFER" (expand-file-name "~/gofer/pucc28.pre"))
   (run-pugofer pugofer-program-name))
