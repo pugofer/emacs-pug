@@ -1,6 +1,7 @@
 ;;; pug.el --- Major mode for Pug language -*- lexical-binding: t; -*-
 
 ;; https://claude.ai/chat/a58a3f72-06b6-498f-8565-fe2bfb6425a3
+;; https://chat.deepseek.com/a/chat/s/b93780e0-bf5e-408d-a716-4fea9e72e1e9
 ;; 15 June 2025
 ;; Copyright (C) Original Authors
 ;; Author: Original Maintainer
@@ -57,7 +58,9 @@
 ;;; Syntax and Font Lock
 (defconst pug-keywords
   '("%%" "%token" "%type" "case" "class" "data" "else" "if" "in" 
-    "infix" "infixl" "infixr" "instance" "let" "of" "then" "type" "where"))
+    "infix" "infixl" "infixr" "instance" "let" "of" "then" "type" "where"
+    "primitive" "do"
+    "ctype"))
 
 ;; (defconst pug-font-lock-keywords
 ;;   `((,(regexp-opt pug-keywords 'symbols) . font-lock-keyword-face)
